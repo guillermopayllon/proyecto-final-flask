@@ -1,2 +1,7 @@
-# proyecto-final-flask
-Repositorio que contiene el proyecto final de curso avanzado de Python en el que crearemos una pequeña web usando Flask entre otras tecnologías.
+# Proyecto Final Flask
+<p>En este repositorio se va a colgar el proyecto final del curso de IBM de Python Avanzado.</p>
+<p>Para este proyecto se usarán diferentes tecnologías, como Flask, SQLAlchemy, Bootstrap, y Bootstrap Icons.</p>
+
+<br>
+
+## Documentación del proyecto
