@@ -1,11 +1,47 @@
 
 <!-- Barra de navegación que extenderemos a todas las plantillas -->
-
+<!-- Vers 1.0 
 <nav>
         <ul style="list-style: none; display: flex; gap: 15px; padding: 10px; background-color: #f0f0f0;">
             <li><a href="/">Inicio</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/about">Sobre mi</a></li>
             <li><a href="/contact">Contacto</a></li>
             <li><a href="/blog">Blog</a></li>
         </ul>
     </nav>
+
+-->
+
+<!-- Versión 2.0 -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Guillermo Ayllon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/portfolio' %}active{% endif %}" href="/portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/about' %}active{% endif %}" href="/about">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/contact' %}active{% endif %}" href="/contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/blog' %}active{% endif %}" href="/blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Fin Versión 2.0 -->
